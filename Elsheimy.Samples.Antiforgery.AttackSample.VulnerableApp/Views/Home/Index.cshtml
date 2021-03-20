@@ -1,0 +1,12 @@
+﻿<div class="container">
+  <div class="row mb-2">
+    <partial name="_LoginForm" />
+  </div>
+
+  @if (ViewBag.IsAuthenticated)
+  {
+    <div class="row">
+      <partial name="_BalanceForm" />
+    </div>
+  }
+</div>

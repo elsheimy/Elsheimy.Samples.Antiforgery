@@ -1,0 +1,16 @@
+﻿<div class="card">
+  <div class="card-body">
+    <div>
+      Current Balance: @ViewBag.Balance
+    </div>
+    <div>
+      <form method="post">
+        <a class="btn btn-primary" href="/">Refresh</a>
+
+        <button class="btn btn-primary" asp-action="Credit" asp-route-amount="10">Credit (+) by 10</button>
+
+        <button class="btn btn-primary" asp-action="Debit" asp-route-amount="10">Debit (-) by 10</button>
+      </form>
+    </div>
+  </div>
+</div>

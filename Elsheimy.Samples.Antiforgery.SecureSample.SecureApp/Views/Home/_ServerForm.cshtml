@@ -1,0 +1,35 @@
+﻿@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Csrf
+@functions {
+  public string GenerateCsrfToken()
+  {
+    return Csrf.GetAndStoreTokens(Context).RequestToken;
+  }
+}
+
+
+<div class="card">
+  <div class="card-body">
+    <div class="card-title">
+      <h5>Server Form</h5>
+    </div>
+
+    <div>
+      Current Balance: @ViewBag.Balance
+    </div>
+    <div>
+      <form method="post">
+
+        @Html.AntiForgeryToken()
+        @*
+            You can also use this to generate an Anti-forgery token
+          <input type="hidden" id="RequestVerificationToken" name="RequestVerificationToken" value="@GenerateCsrfToken()" />
+        *@
+
+
+        <a class="btn btn-primary" href="/">Refresh</a>
+        <button class="btn btn-primary" asp-action="Credit" asp-route-amount="10">Credit (+) by 10</button>
+        <button class="btn btn-primary" asp-action="Debit" asp-route-amount="10">Debit (-) by 10</button>
+      </form>
+    </div>
+  </div>
+</div>

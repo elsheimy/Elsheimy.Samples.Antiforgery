@@ -1,0 +1,52 @@
+﻿<div class="card">
+  <div class="card-body">
+    <div class="card-title">
+      <h5>JavaScript Form</h5>
+    </div>
+
+    <div>
+      Current Balance: <span id="balance">@ViewBag.Balance</span>
+    </div>
+    <div>
+      <form method="post">
+
+        @Html.AntiForgeryToken()
+
+        <a class="btn btn-primary" href="/">Refresh</a>
+        <button class="btn btn-primary" onclick="credit(); return false;">Credit (+) by 10</button>
+        <button class="btn btn-primary" onclick="debit(); return false;">Debit (-) by 10</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  function credit() {
+    let url = location.origin + "/api/credit?amount=10";
+    request(url);
+  }
+
+  function debit() {
+    let url = location.origin + "/api/debit?amount=10";
+    request(url);
+  }
+
+
+  function request(url) {
+    var request = {};
+    request.url = url;
+    request.type = 'POST';
+    request.headers = {
+      'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+    };
+    request.success = function (balance) {
+      $('#balance')[0].innerText = balance;
+    };
+    request.error = function (xhr) {
+      alert(`${xhr.status} ${xhr.statusText}`);
+    };
+
+    $.ajax(request);
+  }
+</script>

@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Attack Sample", "Attack Sample", "{DBABC1C7-8B62-4C9B-9C07-6CC2C3D7EBEC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elsheimy.Samples.Antiforgery.AttackSample.AttackerApp", "Elsheimy.Samples.Antiforgery.AttackSample.AttackerApp\Elsheimy.Samples.Antiforgery.AttackSample.AttackerApp.csproj", "{DA8BB21A-94D8-4018-96D7-DA75CC1B1F1A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elsheimy.Samples.Antiforgery.AttackSample.VulnerableApp", "Elsheimy.Samples.Antiforgery.AttackSample.VulnerableApp\Elsheimy.Samples.Antiforgery.AttackSample.VulnerableApp.csproj", "{981A1C6A-E267-4106-9A5F-1B4DE75AFEE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Secure Sample", "Secure Sample", "{0EA83696-75DA-4F62-89FC-002BFCB8FFA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elsheimy.Samples.Antiforgery.SecureSample.AttackerApp", "Elsheimy.Samples.Antiforgery.SecureSample.AttackerApp\Elsheimy.Samples.Antiforgery.SecureSample.AttackerApp.csproj", "{952BE1AB-BEC9-4A24-9058-1CC37A383226}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elsheimy.Samples.Antiforgery.SecureSample.SecureApp", "Elsheimy.Samples.Antiforgery.SecureSample.SecureApp\Elsheimy.Samples.Antiforgery.SecureSample.SecureApp.csproj", "{D41F417C-7626-410F-9AF8-155CDA871131}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elsheimy.Samples.Antiforgery.SecureSample.AngularApp", "Elsheimy.Samples.Antiforgery.SecureSample.AngularApp\Elsheimy.Samples.Antiforgery.SecureSample.AngularApp.csproj", "{375831F3-64A1-4B3B-B19F-8B3759A68981}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Angular Sample", "Angular Sample", "{77553068-2289-42C7-9DBB-523A2F550269}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA8BB21A-94D8-4018-96D7-DA75CC1B1F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA8BB21A-94D8-4018-96D7-DA75CC1B1F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA8BB21A-94D8-4018-96D7-DA75CC1B1F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA8BB21A-94D8-4018-96D7-DA75CC1B1F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{981A1C6A-E267-4106-9A5F-1B4DE75AFEE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981A1C6A-E267-4106-9A5F-1B4DE75AFEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981A1C6A-E267-4106-9A5F-1B4DE75AFEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981A1C6A-E267-4106-9A5F-1B4DE75AFEE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{952BE1AB-BEC9-4A24-9058-1CC37A383226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{952BE1AB-BEC9-4A24-9058-1CC37A383226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{952BE1AB-BEC9-4A24-9058-1CC37A383226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{952BE1AB-BEC9-4A24-9058-1CC37A383226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D41F417C-7626-410F-9AF8-155CDA871131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D41F417C-7626-410F-9AF8-155CDA871131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D41F417C-7626-410F-9AF8-155CDA871131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D41F417C-7626-410F-9AF8-155CDA871131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{375831F3-64A1-4B3B-B19F-8B3759A68981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{375831F3-64A1-4B3B-B19F-8B3759A68981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{375831F3-64A1-4B3B-B19F-8B3759A68981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{375831F3-64A1-4B3B-B19F-8B3759A68981}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA8BB21A-94D8-4018-96D7-DA75CC1B1F1A} = {DBABC1C7-8B62-4C9B-9C07-6CC2C3D7EBEC}
+		{981A1C6A-E267-4106-9A5F-1B4DE75AFEE9} = {DBABC1C7-8B62-4C9B-9C07-6CC2C3D7EBEC}
+		{952BE1AB-BEC9-4A24-9058-1CC37A383226} = {0EA83696-75DA-4F62-89FC-002BFCB8FFA3}
+		{D41F417C-7626-410F-9AF8-155CDA871131} = {0EA83696-75DA-4F62-89FC-002BFCB8FFA3}
+		{375831F3-64A1-4B3B-B19F-8B3759A68981} = {77553068-2289-42C7-9DBB-523A2F550269}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60DB741F-9031-425F-8BF6-4A1CE1ACD85E}
+	EndGlobalSection
+EndGlobal
